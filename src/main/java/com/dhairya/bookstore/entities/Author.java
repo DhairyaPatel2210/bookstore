@@ -6,15 +6,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-
 @Entity
 @Data
-public class Book {
+public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Isbn;
-    private String Title;
-    private String Cover;
-    private int Page;
-    private String Publisher;
+    private Long Author_id;
+    private String Name;
 }
