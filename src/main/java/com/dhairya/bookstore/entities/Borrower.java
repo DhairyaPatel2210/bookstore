@@ -1,13 +1,17 @@
 package com.dhairya.bookstore.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Borrower {
     @Id
+    @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Long Card_id;
     private int Ssn;
     private String Bname;
