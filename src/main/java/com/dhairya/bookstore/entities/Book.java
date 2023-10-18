@@ -1,14 +1,17 @@
 package com.dhairya.bookstore.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,4 +20,7 @@ public class Book {
     private String Cover;
     private int Page;
     private String Publisher;
+
+    @ManyToMany
+    private List<Author> author;
 }
