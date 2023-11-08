@@ -12,12 +12,12 @@ import lombok.NoArgsConstructor;
 public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Author_id;
+    private Long author_id;
 
     @Column(unique = true, columnDefinition = "VARCHAR(255) COLLATE utf8_bin")
-    private String Name;
+    private String name;
 
     public Author(String name) {
-        Name = name;
+        this.name = name;
     }
 }
