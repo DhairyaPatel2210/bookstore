@@ -1,6 +1,8 @@
 package com.dhairya.bookstore.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,10 +13,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Borrower {
     @Id
-    @GeneratedValue( strategy = GenerationType.IDENTITY)
-    private Long Card_id;
+    private String Card;
+    
+    @Column(unique=true)
     private int Ssn;
-    private String Bname;
+    private String name;
     private String Address;
     private String Phone;
+    
 }

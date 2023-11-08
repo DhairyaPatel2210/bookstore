@@ -14,13 +14,12 @@ import java.util.List;
 @AllArgsConstructor
 public class Book {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Isbn;
+    private String Isbn;
     private String Title;
     private String Cover;
     private int Page;
     private String Publisher;
-
+    private String availability;
     @ManyToMany
     private List<Author> author;
 }
