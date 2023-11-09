@@ -35,24 +35,31 @@ build/
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-/bookstoreFrontend/dist
-/bookstoreFrontend/tmp
-/bookstoreFrontend/out-tsc
-/bookstoreFrontend/bazel-out
+bookstoreFrontend/dist/
+
+bookstoreFrontend/tmp/
+
+bookstoreFrontend/out-tsc/
+
+bookstoreFrontend/bazel-out/
 
 # Node
-/bookstoreFrontend/node_modules
-/bookstoreFrontend/npm-debug.log
-/bookstoreFrontend/yarn-error.log
+
+bookstoreFrontend/node_modules/
+
+bookstoreFrontend/npm-debug.log/
+
+bookstoreFrontend/yarn-error.log/
 
 # IDEs and editors
-/bookstoreFrontend/.project
-/bookstoreFrontend/.classpath
-/bookstoreFrontend/.idea/
-/bookstoreFrontend/.c9/
-/bookstoreFrontend/*.launch
-/bookstoreFrontend/.settings/
-/bookstoreFrontend/*.sublime-workspace
+
+bookstoreFrontend/.project/
+bookstoreFrontend/.classpath/
+bookstoreFrontend/.idea/
+bookstoreFrontend/.c9/
+bookstoreFrontend/*.launch/
+bookstoreFrontend/.settings/
+bookstoreFrontend/*.sublime-workspace/
 
 # Visual Studio Code
 /bookstoreFrontend/.vscode/*
