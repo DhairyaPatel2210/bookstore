@@ -32,45 +32,10 @@ build/
 ### VS Code ###
 .vscode/
 
-# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Compiled output
-bookstoreFrontend/dist
-bookstoreFrontend/tmp
-bookstoreFrontend/out-tsc
-bookstoreFrontend/bazel-out
 
 # Node
-bookstoreFrontend/node_modules
-bookstoreFrontend/npm-debug.log
-bookstoreFrontend/yarn-error.log
 
-# IDEs and editors
-bookstoreFrontend/.idea/
-bookstoreFrontend/.project
-bookstoreFrontend/.classpath
-bookstoreFrontend/.c9/
-bookstoreFrontend/*.launch
-bookstoreFrontend/.settings/
-bookstoreFrontend/*.sublime-workspace
+bookstoreFrontend/node_modules/
 
-# Visual Studio Code
-bookstoreFrontend/.vscode/*
-bookstoreFrontend/!.vscode/settings.json
-bookstoreFrontend/!.vscode/tasks.json
-bookstoreFrontend/!.vscode/launch.json
-bookstoreFrontend/!.vscode/extensions.json
-bookstoreFrontend/.history/*
 
-# Miscellaneous
-bookstoreFrontend/.angular/cache
-bookstoreFrontend/.sass-cache/
-bookstoreFrontend/connect.lock
-bookstoreFrontend/coverage
-bookstoreFrontend/libpeerconnection.log
-bookstoreFrontend/testem.log
-bookstoreFrontend/typings
-
-# System files
-bookstoreFrontend/.DS_Store
-bookstoreFrontend/Thumbs.db
